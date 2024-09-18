@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Operating System
+.DS_Store
+Thumbs.db
+
+# SQL
+*.sqlite
+*.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# Environment variables
+.env
+
+# Project-specific (you may want to customize this section)
+data/
+output/
+results/
