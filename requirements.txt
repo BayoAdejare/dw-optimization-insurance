@@ -1,0 +1,22 @@
+# Snowflake
+snowflake-connector-python==3.0.4
+snowflake-sqlalchemy==1.4.7
+
+# Datadog
+datadog==0.45.0
+
+# Apache NiFi
+nipyapi==0.19.1
+
+# Git
+GitPython==3.1.31
+
+# SQL and database utilities
+SQLAlchemy==1.4.46
+psycopg2-binary==2.9.6
+
+# Other common dependencies
+pandas==1.5.3
+numpy==1.24.3
+requests==2.31.0
+python-dotenv==1.0.0
