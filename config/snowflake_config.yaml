@@ -1,0 +1,10 @@
+config-version: 1
+
+# Snowflake Connection Details
+connection:
+  account: your_snowflake_account
+  user: your_snowflake_username
+  password: your_snowflake_password
+  warehouse: your_snowflake_warehouse
+  database: your_snowflake_database
+  schema: your_snowflake_schema
