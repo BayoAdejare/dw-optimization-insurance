@@ -1,0 +1,69 @@
+config-version: 1
+
+nifi:
+  # Core Properties
+  flow_configuration:
+    auto_resume_state: true
+    archive_max_retention_period: 12 hours
+    archive_max_storage_usage: 500 MB
+
+  # Web Properties
+  web:
+    http:
+      host: localhost
+      port: 8080
+    https:
+      host: localhost
+      port: 9443
+
+  # Security Properties
+  security:
+    keystore: ./conf/keystore.jks
+    keystore_type: JKS
+    keystore_password: password
+    key_password: password
+    truststore: ./conf/truststore.jks
+    truststore_type: JKS
+    truststore_password: password
+
+  # Cluster Node Properties
+  cluster_node:
+    address: nifi.example.com
+    protocol_port: 9999
+
+  # Zookeeper Properties
+  zookeeper:
+    connect_string: localhost:2181
+    root_node: /nifi
+
+  # State Management
+  state_management:
+    provider:
+      local:
+        directory: ./state/local
+      cluster:
+        root_node: /nifi/components
+
+  # Component Status Repository
+  component_status_repository:
+    buffer:
+      size: 1440
+      count: 288
+
+  # Content Repository
+  content_repository:
+    implementation: org.apache.nifi.controller.repository.FileSystemRepository
+    directory: ./content_repository
+
+  # Provenance Repository
+  provenance_repository:
+    implementation: org.apache.nifi.provenance.PersistentProvenanceRepository
+    directory: ./provenance_repository
+
+  # Variable Registry Properties
+  variable_registry:
+    properties_file: ./conf/variables.properties
+
+  # Persistent Properties
+  persistent_properties:
+    file: ./conf/nifi.properties
